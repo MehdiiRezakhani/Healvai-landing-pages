@@ -1,27 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url("https://rsms.me/inter/inter.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+   --foreground: rgb(0, 0, 0);
+    --background: #F2F5F9;
+    --primary: #0F67FE;
+
+
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground: #F2F5F9;
+    --background: black;
   }
 }
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  max-width: 1400px;
+  width: 100%;
+  overflow-x: hidden;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  margin:auto;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* WebKit */
+}
+.linkClass a {
+  @apply underline underline-offset-4
+}
+.custom-form-element {
+  @apply hue-rotate-30 dark:grayscale dark:invert;
+}
+.scrollbar {
+  @apply scrollbarCustomize;
+}
+.scrollbarCustomize::-webkit-scrollbar{
+  height: 0px;
+  width: 0px;
+}
+.scrollbarCustomize::-webkit-scrollbar-thumb{
+  background-color: blue;
+}
+.scrollbarCustomize::-webkit-scrollbar-track-piece{
+  background-color: white;
+}
+
+.skiptranslate {
+  display: none;
+  color: var(--foreground);
+  background-color: var(--background);
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  bottom: 0px;
+  visibility: hidden;
+}
+#goog-gt-vt , #goog-gt-tt {
+  display: none;
+  visibility: hidden;
+}
+
+.blogPost-text {
+  @apply text;
+}
+
+.text h3 {
+  color: var(--primary) !important;
+  font-size: 25px !important;
+  font-weight: bold !important;
+  margin: 20px 0px 10px 0px !important;
+}
+
+.text img {
+  border-radius: 10px !important;
+  margin: 10px 0px !important;
+  align-self: center !important;
+}
+
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation8.MuiPopover-paper.MuiMenu-paper.MuiMenu-paper.css-3dzjca-MuiPaper-root-MuiPopover-paper-MuiMenu-paper {
+  background-color: var(--background);
+  color: var(var(--foreground));
 }
