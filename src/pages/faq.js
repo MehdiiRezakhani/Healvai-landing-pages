@@ -1,9 +1,9 @@
 
 //data
-// import { FaqList } from "@/data/common";
+import { FaqList } from "@/data/common";
 
 //components
-// import AccordionUsage from "@/components/partials/AcoordionUsage";
+import AccordionUsage from "@/components/partials/AcoordionUsage";
 
 export default function FaqPage() {
     return (
@@ -16,7 +16,7 @@ export default function FaqPage() {
                     </h3>
                 </div>
                 <div className='px-5 py-10 lg:px-40 lg:py-20 my-5 bg-white rounded-2xl lg:rounded-3xl'>
-                    {/* <AccordionUsage list={FaqList}/> */}
+                    <AccordionUsage list={FaqList}/>
                 </div>
             </div>
         </div>

@@ -1,8 +1,8 @@
 //assets
-import happier_Icon from '@/assets/common/happier_Icon.svg';
-import smarter_Icon from '@/assets/common/smarter_Icon.svg';
-import healthier_Icon from '@/assets/common/healthier_Icon.svg';
-import easier_Icon from '@/assets/common/easier_Icon.svg';
+import happier_Icon from '@/assets/icons/happier_Icon.svg';
+import smarter_Icon from '@/assets/icons/smarter_Icon.svg';
+import healthier_Icon from '@/assets/icons/healthier_Icon.svg';
+import easier_Icon from '@/assets/icons/easier_Icon.svg';
 import workStep_shot1 from '@/assets/screenshots/workStep_shot1.png';
 import workStep_shot2 from '@/assets/screenshots/workStep_shot2.png';
 import workStep_shot3 from '@/assets/screenshots/workStep_shot3.png';

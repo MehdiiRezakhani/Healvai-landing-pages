@@ -6,7 +6,7 @@ import {profitsList, workStepList, appDownloadList} from "@/data/common";
 
 // assets
 import banner_Screenshot from '@/assets/screenshots/intro_shot.png';
-import download_Icon from '@/assets/common/download_Icon.svg';
+import download_Icon from '@/assets/icons/download_Icon.svg';
 
 
 
