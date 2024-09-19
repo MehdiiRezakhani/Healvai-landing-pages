@@ -82,6 +82,7 @@ export default function MemberCard({data}) {
                     src={data?.pic}
                     alt={`${data?.name} Pic`} 
                     className="w-full h-full object-cover hover:scale-105 ease-linear duration-200"
+                    loading="lazy"
                 />
                 <div className="bg-primary/30 absolute inset-0">
                 </div>

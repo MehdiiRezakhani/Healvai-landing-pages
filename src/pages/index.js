@@ -43,6 +43,7 @@ const HomePage = () => {
                                 src={banner_Screenshot}
                                 alt={`Healvai Screenshots`}
                                 className='w-full h-full'
+                                loading="lazy"
                             />
                         </div>
                     </div>
@@ -80,7 +81,12 @@ const HomePage = () => {
                         {profitsList.map((item,index) =>
                             <div key={index} className='flex flex-col w-full p-6 bg-white dark:bg-black rounded-2xl lg:rounded-3xl'>
                                 <div className='flex items-center justify-center w-14 h-14 rounded-2xl bg-primary_100'>
-                                    <Image src={item.pic} alt={item.title+" Service"} className='w-4 h-4 object-cover'/>
+                                    <Image 
+                                        src={item.pic} 
+                                        alt={item.title+" Service"} 
+                                        className='w-4 h-4 object-cover'
+                                        loading="lazy"
+                                    />
                                 </div>
                                 <h4 className='text-2xl text-gray_800 font-extrabold leading-7 mt-6 mb-2'><bdi>{item.title}</bdi></h4>
                                 <p className='text-base text-gray_600 font-medium leading-6'><bdi>{item.description}</bdi></p>
@@ -114,6 +120,7 @@ const HomePage = () => {
                                             src={item?.pic}
                                             alt={`${item?.title}`}
                                             className='scale-125 translate-y-[-10%]'
+                                            loading="lazy"
                                         />
                                     </div>
                                 </div>
@@ -151,6 +158,7 @@ const HomePage = () => {
                                                 src={download_Icon}
                                                 alt="Download Icon"
                                                 className='w-full h-full object-cover'
+                                                loading="lazy"
                                             />
                                         </div>
                                         
@@ -164,6 +172,7 @@ const HomePage = () => {
                                     src={banner_Screenshot}
                                     alt={`Healvai Screenshots`}
                                     className='w-full h-full object-cover'
+                                    loading="lazy"
                                 />
                             </div>
                         </div>

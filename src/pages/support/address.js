@@ -60,7 +60,12 @@ export default function WalletAddress() {
                     {hasCoin  ? 
                         <div className="flex flex-col items-center text-center">
                             <div className="w-64 h-64 rounded-xl overflow-hidden">   
-                                <Image src={coinData?.[coin]?.QRCode} alt={`${coin} QRCode`} className="w-full h-full"/>
+                                <Image 
+                                    src={coinData?.[coin]?.QRCode} 
+                                    alt={`${coin} QRCode`} 
+                                    className="w-full h-full"
+                                    loading="lazy"
+                                />
                             </div>
                             <div className="flex mt-5 border-[1px] border-dashed border-primary/60 rounded-2xl overflow-hidden">
                                 <p className="text-xs sm:text-sm text-center font-medium p-2">{coinData?.[coin]?.address}</p>

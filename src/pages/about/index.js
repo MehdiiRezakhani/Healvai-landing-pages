@@ -48,6 +48,7 @@ const AboutPage  = () => {
                                                 src={item?.pic}
                                                 alt={`${item?.title} icon`}
                                                 className="w-6 h-6 lg:w-12 lg:h-12"
+                                                loading="lazy"
                                             />
                                         </div>
                                     </div>
@@ -83,6 +84,7 @@ const AboutPage  = () => {
                                         src={award_banner1}
                                         alt={`Healvai Award Banner`}
                                         className='w-full h-full object-cover'
+                                        loading="lazy"
                                     />
                                 </div>
                             </div>

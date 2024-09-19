@@ -8,7 +8,12 @@ export default function ErrorViewer({heading, errorMessage, CTA, link, handler, 
     return (
         <div className="flex flex-col items-center self-center justify-center w-full h-full">
             <div className='w-40 h-40 lg:w-56 lg:h-56'>
-                <Image src={Error_Icon} alt="Error Icon" className='w-full h-full object-cover'/>
+                <Image 
+                    src={Error_Icon} 
+                    alt="Error Icon" 
+                    className='w-full h-full object-cover' 
+                    loading="lazy"
+                />
             </div>
             <h5 className='text-5xl text-[#E13F06] text-center font-bold'><bdi>{heading}</bdi></h5>
             {typeof errorMessage === "string" ? 
