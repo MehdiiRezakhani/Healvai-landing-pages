@@ -3,9 +3,6 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import clsx from 'clsx';
 
-//components
-import AvatarBox from '@/components/dashboard/AvatarBox';
-
 //assets
 import MainLogo from '@/assets/Logo/HLogo.svg';
 import DarkLogo from '@/assets/Logo/HLogo-white.svg';
@@ -62,7 +59,12 @@ export default function Header() {
                             <Drawer/>
                         </div>
                         <div className='hidden lg:block'>
-                            <AvatarBox/>
+                            <Link 
+                                href={"/app"} 
+                                className='text-lg text-center text-white font-bold px-6 py-4 bg-primary rounded-xl'
+                            >
+                                <bdi>{"Get Started Free"}</bdi>
+                            </Link>
                         </div>
                     </div>
                 </div>

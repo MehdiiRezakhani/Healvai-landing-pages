@@ -3,9 +3,6 @@ import Link from 'next/link';
 import Box from '@mui/material/Box';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 
-//components
-import AvatarBox from '@/components/dashboard/AvatarBox';
-
 //data
 import { socialList } from '@/data/aboutUs/commonData';
 
@@ -54,7 +51,12 @@ export default function Drawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <div className='flex flex-col justify-between w-full h-screen relative bg-light dark:bg-black p-5 z-30'>
-        <AvatarBox/>
+        <Link 
+            href={"/app"} 
+            className='text-sm text-center text-white font-bold p-2 bg-primary rounded-lg'
+        >
+            <bdi>{"Get Started Free"}</bdi>
+        </Link>
         <div className='flex flex-col w-full h-full mt-10'>
           {menuList.map((item, index) => (
             <Link 
