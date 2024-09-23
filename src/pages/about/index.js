@@ -132,7 +132,7 @@ const AboutPage  = () => {
                 </div>
                 <div className='flex flex-col w-full mt-20 px-4 lg:px-10'>
                     <p className="text-base lg:text-3xl text-center text-gray_600 font-medium">
-                        <bdi>{("Founded in 2024 by")} <Link href="/about/mehdirezakhani" className="underline">Mehdi Rezakhani</Link></bdi>
+                        <bdi>{("Founded in 2024 by")} <a href="https://linkedin.com/in/mehdiirezakhani" target="_blank" className="underline">Mehdi Rezakhani</a></bdi>
                     </p>
                 </div>
             </div>

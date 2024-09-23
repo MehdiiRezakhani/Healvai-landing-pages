@@ -29,7 +29,6 @@ function MyApp({ Component, pageProps }) {
               <meta name="msapplication-tap-highlight" content="no" />
               <meta name="theme-color" content="#0F67FE"/>
               <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-              <link rel="manifest" href="manifest.json"/>
               <link rel="icon" href="favicon.png" type="image/png"/>
             </Head>
             <InternetConnectionStatus/>

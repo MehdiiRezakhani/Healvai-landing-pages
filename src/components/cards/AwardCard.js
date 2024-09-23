@@ -1,6 +1,6 @@
-export default function AwardCard({key, title, logo, link, subTitle, description}) {
+export default function AwardCard({title, logo, link, subTitle, description}) {
     return (
-        <div key={key} className='flex w-full mt-5'>
+        <div className='flex w-full mt-5'>
             {/* {logo ? 
                 <div className="w-16 h-16 mr-3 border-[1px] border-solid border-primary rounded-full overflow-hidden">
                     <Image 
