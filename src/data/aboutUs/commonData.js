@@ -75,7 +75,7 @@ const teamList = [
             Linkedin:"mehdiirezakhani",
             Instagram:"",
             Twitter:"",
-            Website:"mehdirezakhani",
+            Website:"",
             Email:"mehdiirezakhani@gmail.com",
             Phone:"+989210393561",
         }

@@ -22,6 +22,7 @@ export default function BackToTopButton() {
                     src={backToTop_Icon}
                     alt="Download Icon"
                     className='w-full h-full object-cover'
+                    loading="lazy"
                 />
             </div>
         </button>

@@ -27,9 +27,9 @@ const Footer = () => {
         {
             section:"Product", 
             list: [
-                {title:"AI Body Anomaly Detection", link:'/app/workout/ai-powered-body-anomaly-detection'},
-                {title:"Workout", link:'/app/workout'},
-                {title:'Blog', link:'/app/blog'},
+                {title:"AI Body Anomaly Detection", link:'https://app.healvai.com/workout/ai-powered-body-anomaly-detection'},
+                {title:"Workout", link:'https://app.healvai.com/workout'},
+                {title:'Blog', link:'https://app.healvai.com/blog'},
             ]   
         },
         {
@@ -174,9 +174,11 @@ const Footer = () => {
                         <div className='flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3 mt-10 lg:mt-24'>
                             <div className='flex flex-col lg:flex-row lg:flex-wrap gap-3 lg:items-center'>
                                 {appDownloadList?.map((item,index) => 
-                                    <Link
+                                    <a
                                         key={index}
                                         href={item?.link}
+                                        target='_blank'
+                                        rel='noreferrer'
                                         className='flex items-center justify-center gap-3 px-8 py-4 border-white border-[1px] rounded-xl'
                                     >
                                         <p className='text-lg text-white font-bold'>
@@ -187,9 +189,10 @@ const Footer = () => {
                                                 src={download_Icon}
                                                 alt="Download Icon"
                                                 className='w-full h-full object-cover'
+                                                loading='lazy'
                                             />
                                         </div>
-                                    </Link>
+                                    </a>
                                 )}
                             </div>
                             <div className='flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3'>

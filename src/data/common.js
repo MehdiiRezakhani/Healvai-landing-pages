@@ -60,7 +60,7 @@ const appDownloadList = [
     // },
     {
         title:"Web App",
-        link:"/app",
+        link:"https://app.healvai.com",
     },
 ]
 

@@ -3,7 +3,12 @@ export default function AwardCard({key, title, logo, link, subTitle, description
         <div key={key} className='flex w-full mt-5'>
             {/* {logo ? 
                 <div className="w-16 h-16 mr-3 border-[1px] border-solid border-primary rounded-full overflow-hidden">
-                    <Image src={logo} alt={`${title} + Logo`} className="w-full h-full object-cover"/>
+                    <Image 
+                        src={logo} 
+                        alt={`${title} + Logo`} 
+                        className="w-full h-full object-cover"
+                        loading="lazy"
+                    />
                 </div>
             : null} */}
             <div className="flex flex-col w-full">

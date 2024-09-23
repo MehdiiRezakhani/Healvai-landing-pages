@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
 
 //data
 import {profitsList, workStepList, appDownloadList} from "@/data/common";
@@ -30,12 +29,14 @@ const HomePage = () => {
                         <p className='text-lg sm:text-xl text-gray_600 font-medium leading-6 mt-4'>
                             {"Desk job got you sore? Do you experience chronic neck pain, back pain, shoulder pain, and knee pain? 🤕 Get back to the things you love, pain-free!✌️"}
                         </p>
-                        <Link 
-                            href={"/app"} 
+                        <a
+                            href={"https://app.healvai.com"} 
+                            target="_blank"
+                            rel='noreferrer'
                             className='text-2xl text-center text-white font-bold px-8 py-4 lg:px-20 mt-5 bg-primary rounded-xl lg:rounded-2xl'
                         >
                             <bdi>{"Get Started Free"}</bdi>
-                        </Link>
+                        </a>
                     </div>
                     <div className='flex items-end justify-center lg:w-1/2 mt-10 lg:mt-0'>
                         <div className='lg:w-[600px]'> 
@@ -145,9 +146,10 @@ const HomePage = () => {
                             </h3>
                             <div className='flex flex-col lg:flex-row lg:flex-wrap gap-3 mt-5 lg:items-center'>
                                 {appDownloadList?.map((item,index) => 
-                                    <Link
+                                    <a
                                         key={index}
                                         href={item?.link}
+                                        target='_blank'
                                         className='flex items-center justify-center gap-3 px-8 py-4 border-white border-[1px] rounded-xl'
                                     >
                                         <p className='text-lg text-white font-bold'>
@@ -162,7 +164,7 @@ const HomePage = () => {
                                             />
                                         </div>
                                         
-                                    </Link>
+                                    </a>
                                 )}
                             </div>
                         </div>

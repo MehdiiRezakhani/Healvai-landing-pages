@@ -39,7 +39,12 @@ export default function Header() {
                 <div className='w-full max-w-[1400px] fixed z-10 top-3.5 left-1/2 -translate-x-1/2 px-3 lg:px-5'>
                     <div className='flex items-center justify-between w-full p-5 rounded-2xl overflow-hidden bg-white dark:bg-black backdrop-blur-xl shadow-[0px_16px_32px_0_rgba(9,14,29,0.05)]'>
                         <Link href='/' className='w-7 h-7 lg:w-[50px] lg:h-[50px] hover:scale-[1.05]'>
-                            <Image src={MainLogo} alt='Healvai Logo' className='w-full h-full object-cover'/>
+                            <Image 
+                                src={MainLogo} 
+                                alt='Healvai Logo' 
+                                className='w-full h-full object-cover'
+                                loading='lazy'
+                            />
                         </Link>
                         <div className='hidden lg:flex items-center justify-between'>
                             {mainMenu.map((item,index) => 
@@ -59,12 +64,14 @@ export default function Header() {
                             <Drawer/>
                         </div>
                         <div className='hidden lg:block'>
-                            <Link 
-                                href={"/app"} 
+                            <a 
+                                href={"https://app.healvai.com"} 
+                                target="_blank"
+                                rel='noreferrer'
                                 className='text-lg text-center text-white font-bold px-6 py-4 bg-primary rounded-xl'
                             >
                                 <bdi>{"Get Started Free"}</bdi>
-                            </Link>
+                            </a>
                         </div>
                     </div>
                 </div>

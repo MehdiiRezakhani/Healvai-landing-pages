@@ -25,10 +25,9 @@ export default function Input({
       ><bdi>{title ? title : name}{required ? `*` : ''}</bdi></label>
       {type === "select" ? (
         <select
-          // type={type}
           id={name}
           className={clsx(
-            `text-sm placeholder:text-gray_800 dark:placeholder:text-white/30 font-semibold bg-white w-full h-${h} px-4 py-1 bg-transparent appearance-none rounded-xl border-0 focus:border-0 focus:outline-none focus:ring-0 peer`,
+            `text-sm placeholder:text-gray_800 dark:placeholder:text-white/30 font-semibold bg-white w-full h-[${h}px] px-4 py-1 bg-transparent appearance-none rounded-xl border-0 focus:border-0 focus:outline-none focus:ring-0 peer`,
             {
               "border-none": disabled,
               'text-gray_800 dark:text-white/30' : value == '' ,
