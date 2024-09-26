@@ -74,8 +74,8 @@ body {
   visibility: hidden;
 }
 #goog-gt-vt , #goog-gt-tt {
-  display: none;
-  visibility: hidden;
+  /* display: none; */
+  /* visibility: hidden; */
 }
 
 .blogPost-text {
