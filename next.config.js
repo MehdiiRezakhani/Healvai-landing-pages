@@ -8,6 +8,7 @@ const nextConfig = {
       'media.healvai.ir',
       'media.healvai.com',
     ],
+    unoptimized: true,
   },
   output: 'export',
 }
