@@ -8,9 +8,12 @@ const nextConfig = {
       'media.healvai.ir',
       'media.healvai.com',
     ],
-    unoptimized: true,
+    unoptimized: false, // Re-enable image optimization
   },
-  output: 'export',
+  output: {
+    static: true, // Enable static optimization
+    export: 'always', // Ensure exports are generated
+  },
 }
 
 module.exports = nextConfig
