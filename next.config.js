@@ -9,7 +9,7 @@ const nextConfig = {
       'media.healvai.com',
     ],
   },
-  output: 'standalone',
+  output: 'export',
 }
 
 module.exports = nextConfig
