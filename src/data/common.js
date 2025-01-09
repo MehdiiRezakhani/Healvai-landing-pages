@@ -52,7 +52,7 @@ const workStepList = [
 const appDownloadList = [    
     {
         title:"Android App",
-        link:"https://media.healvai.com/media/healvai.apk",
+        link:"https://media.healvai.com/healvai.apk",
     },
     // {
     //     title:"Google Play",
