@@ -24,14 +24,14 @@ import { YouTube } from '@mui/icons-material';
 const Footer = () => {
     const {pathname} = useRouter();
     const footerMenu = [
-        {
-            section:"Product", 
-            list: [
-                {title:"AI Body Anomaly Detection", link:'https://app.healvai.com/workout/ai-powered-body-anomaly-detection'},
-                {title:"Workout", link:'https://app.healvai.com/workout'},
-                {title:'Blog', link:'https://app.healvai.com/blog'},
-            ]   
-        },
+        // {
+        //     section:"Product", 
+        //     list: [
+        //         {title:"AI Body Anomaly Detection", link:'https://app.healvai.com/workout/ai-powered-body-anomaly-detection'},
+        //         {title:"Workout", link:'https://app.healvai.com/workout'},
+        //         {title:'Blog', link:'https://app.healvai.com/blog'},
+        //     ]   
+        // },
         {
             section:"Company", 
             list: [

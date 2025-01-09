@@ -52,7 +52,7 @@ export default function Drawer() {
     >
       <div className='flex flex-col justify-between w-full h-screen relative bg-light dark:bg-black p-5 z-30'>
         <a 
-            href={"https://app.healvai.com"} 
+            href={"https://media.healvai.com/media/healvai.apk"} 
             target="_blank"
             rel='noreferrer'
             className='text-sm text-center text-white font-bold p-2 bg-primary rounded-lg'
