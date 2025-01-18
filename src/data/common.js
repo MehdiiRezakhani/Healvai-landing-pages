@@ -50,9 +50,13 @@ const workStepList = [
 ]
 
 const appDownloadList = [    
+    // {
+    //     title:"Android App",
+    //     link:"https://media.healvai.com/healvai.apk",
+    // },
     {
         title:"Android App",
-        link:"https://media.healvai.com/healvai.apk",
+        link:"https://cafebazaar.ir/app/com.med.healvai",
     },
     // {
     //     title:"Google Play",
