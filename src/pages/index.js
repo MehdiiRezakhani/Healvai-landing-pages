@@ -30,7 +30,7 @@ const HomePage = () => {
                             {"Desk job got you sore? Do you experience chronic neck pain, back pain, shoulder pain, and knee pain? 🤕 Get back to the things you love, pain-free!✌️"}
                         </p>
                         <a
-                            href={"https://media.healvai.com/healvai.apk"} 
+                            href={"https://cafebazaar.ir/app/com.med.healvai?l=en"} 
                             target="_blank"
                             rel='noreferrer'
                             className='text-2xl text-center text-white font-bold px-8 py-4 lg:px-20 mt-5 bg-primary rounded-xl lg:rounded-2xl'

@@ -65,7 +65,7 @@ export default function Header() {
                         </div>
                         <div className='hidden lg:block'>
                             <a 
-                                href={"https://media.healvai.com/healvai.apk"} 
+                                href={"https://cafebazaar.ir/app/com.med.healvai?l=en"} 
                                 target="_blank"
                                 rel='noreferrer'
                                 className='text-lg text-center text-white font-bold px-6 py-4 bg-primary rounded-xl'
